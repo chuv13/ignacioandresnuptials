@@ -194,35 +194,3 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vg { color: #008080; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
-/* 
-
-@media (min-aspect-ratio: 16/9) {
-  video {
-      width:100%;
-      height: auto;
-      object-position: 50% 50% !important;
-      object-fit: cover !important;
-      z-index: -99 !important;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  video { 
-      width:auto;
-      height: 100%;
-      object-position: 50% 50% !important;
-      object-fit: cover !important;
-      z-index: -99 !important;
-  }
-} */
-
-
-/* @media (max-width: 767px) {
-  #videoBG {
-      display: none;
-  }
-  body {
-      background: url('poster.jpg');
-      background-size: cover;
-  }
-} */
