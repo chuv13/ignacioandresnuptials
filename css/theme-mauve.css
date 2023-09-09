@@ -1287,8 +1287,9 @@ input[type="submit"]:focus {
   margin: 0 auto;
   display: inline-block;
 }
-.rsvp form input[type="text"] {
+.rsvp form input[type="mail"] {
   height: 55px;
+  min-width: 350px;
   background: #fcfcfc;
   border: 1px solid #d6d6d6;
   width: 100%;
@@ -1302,9 +1303,30 @@ input[type="submit"]:focus {
   margin-right: -2px;
   font-family: "Lato";
 }
-.rsvp form input[type="text"]:focus {
+.rsvp form input[type="mail"]:focus {
   outline: none;
 }
+
+.rsvp form textarea[name="message"] {
+  height: 55px;
+  min-width: 350px;
+  background: #fcfcfc;
+  border: 1px solid #d6d6d6;
+  width: 100%;
+  padding: 0 8px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: -2px;
+  font-family: "Lato";
+}
+.rsvp form textarea[name="message"]:focus {
+  outline: none;
+}
+
 .rsvp form input[type="submit"] {
   border: 1px solid #96A7AD;
   color: #96A7AD;
