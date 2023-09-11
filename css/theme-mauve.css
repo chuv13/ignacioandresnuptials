@@ -1287,7 +1287,7 @@ input[type="submit"]:focus {
   margin: 0 auto;
   display: inline-block;
 }
-.rsvp form input[type="mail"] {
+.rsvp form input[type="email"] {
   height: 55px;
   min-width: 350px;
   background: #fcfcfc;
@@ -1303,7 +1303,7 @@ input[type="submit"]:focus {
   margin-right: -2px;
   font-family: "Lato";
 }
-.rsvp form input[type="mail"]:focus {
+.rsvp form input[type="email"]:focus {
   outline: none;
 }
 
