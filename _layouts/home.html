@@ -31,6 +31,9 @@
 					<a href="#reception" class="inner-link" target="default">reception</a>
 				</li>
 				<li>
+					<a href="#dresscode" class="inner-link" target="default">dress code</a>
+				</li>
+				<li>
 					<a href="#gallery" class="inner-link" target="default">gallery</a>
 				</li>
 				<li>
@@ -52,7 +55,7 @@
 			<div class="background-image-holder fadeIn" style="background: url(&quot;assets/hero.webp&quot;) 50% 50%;">
 				<img alt="Background image" class="background-image" src="assets/hero.webp" style="display: none;">
 			</div>
-		
+
 			<div class="container">
 				<div class="row">
 					<div class="text-center col-sm-11">
@@ -62,23 +65,6 @@
 				</div>
 			</div>
 		</section>
-
-		<!-- <section class="header header-4 fullscreen burns-effect overlay" style="background: url('assets/gallery/06.jpg') 50% 50%">
-			<div class="background-image-holder fadeIn">
-				<video playsinline autoplay muted loop class="background-image">
-					<source src="assets/banner_loop.mp4" type="video/mp4" />
-					Your browser does not support the video tag.
-				</video>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<h1>Eric &amp; Eunice</h1>
-						<h6>October 14th - Santa Maria, Bulacan, PH</h6>
-					</div>
-				</div>
-			</div>
-		</section> -->
 
 		<a id="story" class="in-page-link"></a>
 
@@ -140,7 +126,8 @@
 		<section class="accom accom-1 overlay">
 			<div class="background-image-holder parallax fadeIn"
 				style="background: url('assets/reception.webp') 50% 50%">
-				<img alt="Background image" class="background-image" src="assets/reception.webp" style="display: none" />
+				<img alt="Background image" class="background-image" src="assets/reception.webp"
+					style="display: none" />
 			</div>
 
 			<div class="container">
@@ -160,11 +147,58 @@
 			</div>
 		</section>
 
+		<a id="dresscode" class="in-page-link"></a>
+
+		<section class="story story-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h1>Dress Code: Formal attire</h1>
+						<h6>Principal Sponsors</h6>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 text-center">
+						<p>
+							Barong with black pants for the gentlemen, and Beige long gowns for the ladies.
+							<br />
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h6>Guests</h6>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 text-center">
+						<p>
+							Polo for gentlemen, and cocktail dresses for the ladies.
+							<br />
+							We would really appreciate it if guests would follow our motif:
+							<br />
+							<br />
+							<!-- Coolors Palette Widget -->
+							<script src="https://coolors.co/palette-widget/widget.js"></script>
+							<script
+								data-id="027028156323323094">new CoolorsPaletteWidget("027028156323323094", ["D3DDDA", "A5B3B2", "82999B", "95A6AE"]); </script>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<a id="gallery" class="in-page-link"></a>
 
 		<section class="story story-3">
 			<div class="container">
-				<div class="embedsocial-hashtag" data-ref="43cdd355b28284ec64620269bd83647bad316403"> <a class="feed-powered-by-es" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial"> Widget by EmbedSocial <span>→</span> </a> </div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+				<div class="embedsocial-hashtag" data-ref="43cdd355b28284ec64620269bd83647bad316403"> <a
+						class="feed-powered-by-es" href="https://embedsocial.com/social-media-aggregator/"
+						target="_blank" title="Widget by EmbedSocial"> Widget by EmbedSocial <span>→</span> </a> </div>
+				<script> (function (d, s, id) { var js; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
 			</div>
 
 
@@ -196,22 +230,6 @@
 								<!-- your other form fields go here -->
 								<button type="submit" class="btn inner-link">Send</button>
 							</form>
-							<!-- <form class="form-email" original-error="Please fill out all fields"
-								action="https://formspree.io/f/xbjvyepo" method="POST">
-								<div class="form-section">
-									<label>
-										<h6>Your Email?</h6>
-										<input type="mail" name="your-name-names" class="validate-required" />
-									</label>
-								</div>
-								<div class="form-section">
-									<label>
-										<h6>Are you attending?</h6>
-										<textarea name="message"></textarea>
-									</label>
-								</div>
-								<button type="submit" class="btn inner-link">Submit</button>
-							</form> -->
 						</div>
 					</div>
 				</div>
@@ -244,6 +262,10 @@
 	<script>
 		window.addEventListener("load", function () {
 			baguetteBox.run(".gallery");
+		});
+
+		$(document).ready(function() {
+			$(".coolors-palette-widget_info" ).remove();
 		});
 	</script>
 </body>
